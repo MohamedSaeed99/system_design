@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2" pages="6">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4" pages="8">
   <diagram name="Performance vs Scalability" id="3dEaVhay1nNvQqROv9vj">
     <mxGraphModel dx="1323" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -275,6 +275,28 @@
         </mxCell>
         <mxCell id="kgqtpPwRAJP5ywi7ASFB-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://i.sstatic.net/6qeu7.jpg;" vertex="1" parent="1">
           <mxGeometry x="193.69" y="-280" width="432.63" height="274" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="RGe4KYdHSLOSTgtW3Pjb" name="Application Layer">
+    <mxGraphModel dx="794" dy="1611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MHkChTXDdvswb6Ab2Gtm-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Application Layer&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;jas&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="-5" width="190" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wojzPh7BF2kytvrgvKSJ" name="Databases">
+    <mxGraphModel dx="794" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E0_iV7rNZ_t7rMNA6NO7-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Databases&lt;/b&gt;&lt;/font&gt;&lt;div&gt;Databases have a significant impact on the performance, scalability, and overall success of the system.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;NoSQL&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;b&gt;Key-Value Store:&lt;/b&gt; Allows for &lt;b&gt;O(1) reads and writes&lt;/b&gt; and is often &lt;b&gt;backed by memory or SSD&lt;/b&gt;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp; &amp;nbsp;- Provides &lt;b&gt;high performance&lt;/b&gt; and are often used for &lt;b&gt;simple data models or for rapidly-changing data&lt;/b&gt;, such as an in-memory cache-layer.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Document Store: &lt;/b&gt;Centered around &lt;b&gt;documents&lt;/b&gt;, where a &lt;b&gt;document stores all information for a given object&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Wide Column Store: &lt;/b&gt;Store&#39;s basic unit of data as a &lt;b&gt;column&lt;/b&gt;. A &lt;b&gt;column can be grouped in column families&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Graph Databases: Nodes are records&lt;/b&gt; and each &lt;b&gt;arc is a relationship&lt;/b&gt; between two nodes.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Offer &lt;b&gt;high performance&lt;/b&gt; for data models with &lt;b&gt;complex relationships&lt;/b&gt; such as a social network.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;RDBMS&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;b style=&quot;&quot;&gt;Replication: &lt;/b&gt;The process of &lt;b&gt;copying data from one database to another&lt;/b&gt;. It is used to increase availability and scalability.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp; &amp;nbsp;- &lt;b&gt;Master-slave replication: Master serves reads and writes&lt;/b&gt;, replicating writes to one or more slaves.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp; &amp;nbsp;- &lt;b&gt;Master-master replication: Both masters serve reads and writes&lt;/b&gt; and coordinate with each other on writes.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Sharding: Distributes data across different databases&lt;/b&gt; such that each database can only manage subset of the data.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Results in &lt;b&gt;less read and write traffic, less replication, and more cache hits&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- No single central master serializing writes, &lt;b&gt;allowing to write in parallel increasing throughput&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Federation: &lt;/b&gt;Splits up databases by function.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;No single central master serializing writes, &lt;b&gt;allowing to write in parallel increasing throughput&lt;/b&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- &lt;b&gt;Smaller databases result&lt;/b&gt; in more data that can fit in memory, which results in &lt;b&gt;more cache hits&lt;/b&gt; due to improved cache locality.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Denormalization: Improve read performance&lt;/b&gt; at the &lt;b&gt;expense of some write performance&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- &lt;b&gt;Redundant copies&lt;/b&gt; of the data are &lt;b&gt;written in multiple tables&lt;/b&gt; to avoid expensive joins.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;SQL Tuning: Benchmarch and profile&lt;/b&gt; to simulate and uncover bottlenecks.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Benchmark: Simulate high-load situations with tools such as ab.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- Profile: Enable tools such as the slow query log to help track performance issues.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="780" height="510" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
