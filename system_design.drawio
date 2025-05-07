@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="10">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="11">
   <diagram name="Performance vs Scalability" id="3dEaVhay1nNvQqROv9vj">
     <mxGraphModel dx="1323" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -385,6 +385,59 @@
         </mxCell>
         <mxCell id="I0WeXjqAKCDbgzaJzeI--2" value="Operations that can be applied multiple times without changing the result beyond the initial application.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Many queueing systems guarantee at&lt;b&gt;&lt;i&gt; least once&lt;/i&gt;&lt;/b&gt; message delivery or processing.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Designing the operations that a task queue executes to be idempotent allows one to use a queueing system that has accepted this design trade-off.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry y="35" width="810" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WR4sNZClPXq8sZigQvj-" name="Communication">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lFlsjTwK83ZYtfaEo936-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Communication&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;HTTP&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-3" value="A method for encoding and transporting data between a client and a server.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It is a request/response protocol: Clients issue requests and servers issue responses with relevant content and completion status info about the request.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;HTTP is self-contained, allowing requests and responses to flow through many&amp;nbsp;&lt;/div&gt;&lt;div&gt;intermediate routers and servers that perform load balancing, caching, encryption, and compression.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="70" width="830" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;TCP&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-5" value="A connection-oriented protocol over an &lt;b&gt;IP network. &lt;/b&gt;The connection is established and terminated using a handshake.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;All packets sent are guaranteed to reach the destination in the original order and without corruption through:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Sequence numbers and checksum fields for each packet&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Acknowledgement packets and automatic retransmission.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If the &lt;b&gt;sender &lt;/b&gt;does &lt;b&gt;not receive a correct response&lt;/b&gt;, it will &lt;b&gt;resend &lt;/b&gt;the packets.&lt;/div&gt;&lt;div&gt;If there are &lt;b&gt;multiple timeouts&lt;/b&gt;, the&lt;b&gt; connection is dropped&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;It also implements flow control and congestion control.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;These guarantees result in less efficient transmission than UDP.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TCP is &lt;b&gt;useful &lt;/b&gt;for applications that &lt;b&gt;require high reliability&lt;/b&gt; but are &lt;b&gt;less time critical&lt;/b&gt;.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="210" width="650" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;UDP&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-7" value="UDP is connectionless. Datagrams (packets) might reach their destination out of order or not at all.&lt;div&gt;&lt;br&gt;&lt;div&gt;UDP does not support congestion control. It is more efficient than TCP because it lacks the guarantees that TCP supports.&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It is less reliable but works well in real time use cases such as VoIP, video chat, streaming, and realtime multiplayer games.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="480" width="680" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;RPC&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-9" value="In an RPC, a client causes a procedure to execute on a different address space, a remote server.&amp;nbsp;&lt;div&gt;The procedure is implemented as if it were a local procedure call, abstracting the details of how to communicate with the server.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RPC is a request-response protocol:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Client program&lt;/b&gt; - &lt;b&gt;Calls &lt;/b&gt;the &lt;b&gt;client stub procedure&lt;/b&gt;. The &lt;b&gt;parameters &lt;/b&gt;are &lt;b&gt;pushed onto&lt;/b&gt; the &lt;b&gt;stack &lt;/b&gt;like a local procedure call.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Client stub procedure&lt;/b&gt; - &lt;b&gt;Marshals procedure id and arguments&lt;/b&gt; into a request message.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Client communication module&lt;/b&gt; - OS &lt;b&gt;sends &lt;/b&gt;the &lt;b&gt;message &lt;/b&gt;from the client to the &lt;b&gt;server&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Server communication module&lt;/b&gt; - OS &lt;b&gt;passes &lt;/b&gt;the incoming &lt;b&gt;packets &lt;/b&gt;to the &lt;b&gt;server stub procedure&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Server stub procedure&lt;/b&gt; - &lt;b&gt;Unmarshalls &lt;/b&gt;the results, &lt;b&gt;calls the server procedure&lt;/b&gt; matching the procedure id and passes the given arguments.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - The server response repeats the steps above in reverse order.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RPCs are often used for performance reasons with internal communications, because you handcraft native calls to better fit the use case.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Disadvantages&lt;/b&gt;:&lt;/div&gt;&lt;div&gt;&amp;nbsp; - RPC clients become tightly coupled to the service implementation&lt;/div&gt;&lt;div&gt;&amp;nbsp; - A new API must be defined for every new operation or use case.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - It can be difficult to debug RPC&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Might not leverage existing technologies out of the box&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="610" width="790" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;gRPC&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="908" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-11" value="High performance, open-source framework for building remote procedure call (RPC) APIs.&lt;div&gt;It is based on the Protocol Buffers data serialization format and supports a variety of programming languages.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="938" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;REST&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="990" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-13" value="An architectural style enforcing a client/server model where the client acts on a set of resources managed by the server.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;All communication must be stateless and cacheable&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Four qualities of RESTful interface:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&lt;b&gt; Identify resources (URI in HTTP)&lt;/b&gt; - use the same URI regardles of any operation&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Change with representations (Verbs in HTTP)&lt;/b&gt; - use verbs, headers, and body&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Self-descriptive error message (status response in HTTP)&lt;/b&gt; - use status codes, don&#39;t reinvent the wheel&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;HATEOAS (HTML interface for HTTP)&lt;/b&gt; - your web service should be fully accessible in a browser&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;REST is focused on exposing data, it minimizes the coupling between client/server and is often used for public HTTP APIs.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1020" width="670" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;GraphQL&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1220" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lFlsjTwK83ZYtfaEo936-16" value="A query language and runtime for building APIs.&amp;nbsp;&lt;div&gt;It allows clients to defin the structure of the data they need and the server will return exactly that.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1250" width="540" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
