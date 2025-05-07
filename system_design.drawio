@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="11">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="12">
   <diagram name="Performance vs Scalability" id="3dEaVhay1nNvQqROv9vj">
     <mxGraphModel dx="1323" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -438,6 +438,80 @@
         </mxCell>
         <mxCell id="lFlsjTwK83ZYtfaEo936-16" value="A query language and runtime for building APIs.&amp;nbsp;&lt;div&gt;It allows clients to defin the structure of the data they need and the server will return exactly that.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry y="1250" width="540" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fzKRSeV8_WZgwXp1w1bV" name="Performance Antipatterns">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yyGKccI7cpsGXVNPymz3-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Performance Antipatterns&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-2" value="Refers to common mistakes or suboptimal practices that can lead to poor performance in a system.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Examples:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;N+1 queries&lt;/b&gt;: Occurs when a&lt;b&gt; system makes multiple queries to a database&lt;/b&gt; to retrieve related data,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;instead of using a single query to retrieve all the necessary data&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Chatty interfaces&lt;/b&gt;: Occurs when a system &lt;b&gt;makes too many small and frequent requests to an external service or API&lt;/b&gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;instead of making fewer, larger requests&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Unbounded data&lt;/b&gt;: Occurs when a system &lt;b&gt;retrieves or processes more data than is necessary&lt;/b&gt; for the task at hand,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;leading to increased resource usage and reduced performance&lt;/div&gt;&lt;div&gt;&amp;nbsp; - &lt;b&gt;Inefficient algorithms&lt;/b&gt;: Occurs when a system&lt;b&gt; uses an algorithm that is not well suited to the task &lt;/b&gt;at hand,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;leading to increased resources usage and reduced performance&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="40" width="690" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-3" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Improper Instantiation&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="240" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-4" value="Refers to the practice of creating unnecessary instances of an object, class or service, which leads to performance and scalability issues." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="270" width="750" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Busy Database&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="310" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-6" value="Refers to databases that is handling a high volume of requests or transactions,&amp;nbsp;&lt;div&gt;this can occur when a system is experiencing high traffic or when a database is not properly optimized for the workload its handling.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;To address this a number of approaches can be taken such as Scaling out, Optimizing the schema, Caching, and Indexing.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="340" width="720" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Monolithic Persistence&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="418" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-9" value="Refers to the use of a single, monolithic database to store all of the data for an application or system.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;To address this a number of approaches can be taken such as Microservices, Sharding, and NoSQL databases&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="448" width="610" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Busy Frontend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="520" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-11" value="Asynchronous work on a large number of background threads, resulting in starvation of resources for other concurrent foreground tasks,&amp;nbsp;&lt;div&gt;decreasing response times to unacceptable levels.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Resource-intensive tasks can increase the response times for user requests and cause hight latency.&lt;/div&gt;&lt;div&gt;One way to improve response times is to offload a resource-intensive task to a separate thread.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;However, tasks that run on a background thread still consume resources, and if there are too many of them,&lt;/div&gt;&lt;div&gt;they can starve the threads that are handling requests.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This problem occurs when an application is developed as a monolithic piece of code,&amp;nbsp;&lt;/div&gt;&lt;div&gt;with all of the business logic combined into&amp;nbsp; a single ties shared with the presentation layer.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="550" width="750" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Noisy Neighbor&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="728" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-13" value="Refers to a situation in which one or more components of a system are utilizing a disproportionate amount of shared resources,&amp;nbsp;&lt;div&gt;leading to resource contention and reduced performance of other components.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Examples of scenarios:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - One user on a shared server utilizing a large amount of CPU or memory, leading to reduced performance for other users on the same server&lt;/div&gt;&lt;div&gt;&amp;nbsp; - One process on a shared server utilizing a large amount of I/O, causing other processes to experience slow I/O and increased latency&lt;/div&gt;&lt;div&gt;&amp;nbsp; - One application consuming a large amount of network bandwidth, causing other applications to experience reduced throughput&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="758" width="780" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-14" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Chatty I/O&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="900" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-15" value="Cumulative effect of a large number of I/O requests which has a significant impact on performance and responsiveness.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Common causes of chatty I/O:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Reading and writing individual records to a database as distinct requests.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Implementing a single logical operation as a series of HTTP requests&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Reading and writing to a file on disk&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="930" width="660" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-16" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Synchronous I/O&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1048" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-17" value="Operation that blocks the calling thread while the I/O completes.&amp;nbsp;&lt;div&gt;The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Common examples of I/O:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Retrieving or persisting data to a database or any type of persistent storage.&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Sending a request to a web service&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Posting a message or retrieving a message from a queue&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Writing to or reading from a local file&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Occurs because:&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - It appears to be the most intuitive way to perform an operation&lt;/div&gt;&lt;div&gt;&amp;nbsp; - The application requires a response from a request&lt;/div&gt;&lt;div&gt;&amp;nbsp; - The application uses a library that only provides synchronous methods for I/O&lt;/div&gt;&lt;div&gt;&amp;nbsp; - An external library performs synchronous I/O operations internally&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1078" width="690" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-18" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Retry Storm&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1330" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-19" value="Refers to a situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;To address this, a number of approaches can be taken such as Exponential backoff, Circuit breaking, and Monitoring and alerting.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1360" width="840" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-20" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Extraneous Fetching&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1428" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-21" value="Refers to the practice of retrieving more data than is needed for a specific task or operation.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It can lead to a number of issues, such as:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Performance degradation&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Increased resource utilization&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Increased network traffic&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Poor user experience&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1458" width="510" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-22" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;No Caching&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1600" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yyGKccI7cpsGXVNPymz3-23" value="Occurs when a cloud application that handles many concurrent requests, repeatedly fetches the same data.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Undesirable behaviors when data is not cached:&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Repeatedly fetching the same information from a resource that is expensive to access, in terms of I/O overhead and latency&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Repeatedly constructing the same objects or data structures for multiple requests&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Making excessive calls to a remote service that has a service quota and throttles clients past a certain limit&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1630" width="690" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
